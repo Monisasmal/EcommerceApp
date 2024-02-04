@@ -148,17 +148,17 @@ const cartReducer = (state, action) => {
 
   // For Total Amount
 
-  if (action.type === "CART_TOTAL_PRICE") {
-    let TotalAmount = state.cart.reduce((initialVal,curElem) => {
-      let { price, amount } = curElem;
-      initialVal = initialVal + price * amount;
-      return initialVal;
-    }, 0);
-    return {
-      ...state,
-      total_amount: TotalAmount,
-    };
-  }
+  // if (action.type === "CART_TOTAL_PRICE") {
+  //   let TotalAmount = state.cart.reduce((initialVal,curElem) => {
+  //     let { price, amount } = curElem;
+  //     initialVal = initialVal + price * amount;
+  //     return initialVal;
+  //   }, 0);
+  //   return {
+  //     ...state,
+  //     total_amount: TotalAmount,
+  //   };
+  // }
 
   return state;
 };
